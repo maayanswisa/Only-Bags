@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OnlyBags" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="AlertDialogButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#FF4081</item>
+        <item name="android:padding">10dp</item>
+        <!-- Add any other style attributes you want to customize -->
+    </style>
+
+    <style name="Theme.OnlyBags" parent="Base.Theme.OnlyBags" />
+</resources>

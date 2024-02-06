@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OnlyBags</string>
+    <string name="btn_bags">כל הפריטים</string>
+    <string name="btn_cart">קופה</string>
+    <string name="txt_havefun">תתחדשו</string>
+    <string name="hint_amountInDollar">תכניס סכום בדולרים</string>
+    <string name="btn_AllItems">פריטים</string>
+    <string name="btn_BuyAll">לקנייה</string>
+    <string name="txt_NumberItems">מספר פריטים</string>
+    <string name="txt_total">סך הכל</string>
+    <string name="btn_goTOCart">קופה</string>
+</resources>

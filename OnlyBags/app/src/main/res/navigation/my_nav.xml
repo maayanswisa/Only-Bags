@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/welcomeFragment"
+    >
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.onlybags.WelcomeFragment"
+        android:label="welcome_layout"
+        tools:layout="@layout/welcome_layout" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_allItemsFragment"
+            app:destination="@id/allItemsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_cartFragment"
+            app:destination="@id/cartFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/allItemsFragment"
+        android:name="com.example.onlybags.AllItemsFragment"
+        android:label="all_items_layout"
+        tools:layout="@layout/all_items_layout" >
+        <action
+            android:id="@+id/action_allItemsFragment_to_cartFragment"
+            app:destination="@id/cartFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.onlybags.CartFragment"
+        android:label="cart_layout"
+        tools:layout="@layout/cart_layout" >
+        <action
+            android:id="@+id/action_cartFragment_to_allItemsFragment"
+            app:destination="@id/allItemsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_cartFragment_to_afterBuyFragment2"
+            app:destination="@id/afterBuyFragment2"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/afterBuyFragment2"
+        android:name="com.example.onlybags.AfterBuyFragment"
+        android:label="fragment_after_buy"
+        tools:layout="@layout/fragment_after_buy" />
+</navigation>
